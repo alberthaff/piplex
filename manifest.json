@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "PiPlex",
+  "version": "1.0.0",
+  "description": "Adds picture in picture support for Plex",
+  "short_name": "PiPlex",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://app.plex.tv/*"],
+      "js": ["background.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Adds picture in picture support for Plex",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  }
+}
